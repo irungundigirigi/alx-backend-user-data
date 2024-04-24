@@ -11,7 +11,7 @@ from sqlalchemy import {
 
 Base = declarative_base()
 
-class Users(Base):
+class User(Base):
     """
     Define Class User
     """
