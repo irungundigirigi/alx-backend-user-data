@@ -3,11 +3,11 @@
 SQLAlchemy model, User for database table named users
 """
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import {
+from sqlalchemy import (
     Column,
     String,
     Integer
-}
+)
 
 Base = declarative_base()
 
@@ -22,9 +22,3 @@ class User(Base):
     hashed_password = Column(String(250), nullable=False)
     session_id = Column(String(250), nullable=True)
     reset_token = Column(String(250), nullable=True)
-
-
-
-
-
-
